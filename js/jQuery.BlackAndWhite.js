@@ -190,10 +190,7 @@
 
 					css[cssPrefix('Filter')] = 'grayscale(100%)';
 					//adding the canvas
-					$('<img src=' + src + ' width="' + width + '" height="' + height + '" class="BWFilter BWfade" /> ').prependTo($imageWrapper);
-					$('.BWFilter').css($.extend(css,{
-							'filter': 'progid:DXImageTransform.Microsoft.BasicImage(grayscale=1)'
-					}));
+					$('<img src=' + src + ' width="' + width + '" height="' + height + '" class="BWFilter BWfade" /> ').prependTo($imageWrapper).css($.extend(css,{'filter': 'progid:DXImageTransform.Microsoft.BasicImage(grayscale=1)'}));
 				}
 			};
 			this.init = function (options) {
